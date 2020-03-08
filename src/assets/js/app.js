@@ -14,7 +14,7 @@ function caller() {
 caller();
 
 // -----WhireFrame.html - CLONE-----
-$(".list-group-item").on("click",'body',function(e) {
+$(".list-group-item").on("click" ,function(e) {
       var toClone = $(this).clone(true, true);
       localStorage.setItem("clone", JSON.stringify(toClone.html()));
     });
