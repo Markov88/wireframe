@@ -69,5 +69,8 @@
     var cloned = JSON.parse(localStorage.getItem("clone"));
     $("#element").html(cloned);
     caller();
+      //fixing bug..
+    $( document ).ready(()=> $('#snipped-block').css('display','block'))
+   
   </script>
 </html>
