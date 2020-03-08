@@ -1,9 +1,6 @@
 // -----WhireFrame.html-----
 function caller() {
-  $(".list-group-item").each(function() {
-    $(this)
-      .find(".button")
-      .on("click", function(e) {
+  $(".list-group-item").find(".button").on("click",function(e) {
         e.preventDefault();
         e.stopPropagation();
         $(this).toggleClass("isClick");
@@ -13,14 +10,12 @@ function caller() {
           .find(".fas")
           .toggleClass("isClick-icon");
       });
-  });
 }
 caller();
 
 // -----WhireFrame.html - CLONE-----
-$(".list-group-item").each(function() {
-    $(this).on("click", function(e) {
+$(".list-group-item").on("click",'body',function(e) {
       var toClone = $(this).clone(true, true);
       localStorage.setItem("clone", JSON.stringify(toClone.html()));
     });
-  });
+  
