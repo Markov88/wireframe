@@ -3,13 +3,8 @@
 $(function() {
   $("#color-block").on("colorchange", function(e) {
     var color = $(this).wheelColorPicker("value");
-    var name = $("#element span")
-      .first()
-      .text()
-      .trim();
-    var onOrOff = $("#element span")
-      .last()
-      .text();
+    var name = $("#element span").first().text().trim();
+    var onOrOff = $("#element span").last().text();
     var obj = {
       color: color,
       name: name,
