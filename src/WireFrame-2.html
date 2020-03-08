@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Test</title>
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <script
+      src="https://kit.fontawesome.com/4beb4c337d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+        <nav
+          class="navbar navbar-expanded-sm navbar-danger   bg-danger navbar-dark py-3"
+        >
+          <div class="container">
+            <div>
+              <span class="mr-5" style="font-size:1.3rem;color:white;">
+                <i class="fas fa-arrow-left"></i>
+              </span>
+              <a
+                href="WireFrame.html"
+                class="navbar-brand"
+                style="font-size:1.5rem;line-height: 1rem;"
+              >
+                Device Settings</a
+              >
+            </div>
+           
+          </div>
+        </nav>
+      </header>
+
+    <div class="list-group ">
+      <a
+        class="list-group-item text-dark  border-0 py-3 h6 align-items-center mb-1"
+        href="WireFrame-2.html"
+        id="element"
+      >
+      </a>
+    </div>
+
+    <div id="snippet-block" class="snippet">
+      <p>
+        <input
+          id="color-block"
+          type="text"
+          value="#ff8800"
+          data-wheelcolorpicker
+          data-wcp-format="css"
+          data-wcp-layout="block"
+          data-wcp-cssClass="color-block"
+          data-wcp-autoResize="false"
+        />
+      </p>
+     
+    </div>
+    <p class="text-black-50 text-center" style="font-size:1.1rem;">Touch the color picker to choose a color</p>
+  </body>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    var cloned = JSON.parse(localStorage.getItem("clone"));
+    $("#element").html(cloned);
+    caller();
+  </script>
+</html>

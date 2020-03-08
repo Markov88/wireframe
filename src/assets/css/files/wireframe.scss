@@ -1,0 +1,21 @@
+.list-group-item{
+    background:rgb(238, 238, 238);
+    border-radius:0!important;
+    text-decoration: none!important;
+    i{
+        transform: rotate(-90deg);
+        margin-right: .5rem;
+        color: rgb(105, 105, 105) ;
+    }
+}
+
+.isClick{
+    background: rgb(233, 233, 233)!important;
+    color:rgb(32, 32, 32)!important;
+    transition:.3s;
+}
+.isClick-icon{
+    color: rgb(92, 92, 168)!important;
+    transition:.3s;
+}
+ 
