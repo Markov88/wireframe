@@ -1,1 +1,1 @@
-Permalink public/wireframe.html
+Permalink public/WireFrame.html
