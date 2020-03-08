@@ -22,6 +22,5 @@ $(".list-group-item").each(function() {
     $(this).on("click", function(e) {
       var toClone = $(this).clone(true, true);
       localStorage.setItem("clone", JSON.stringify(toClone.html()));
-      window.location = $(this).attr("href");
     });
   });
